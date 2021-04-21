@@ -1,8 +1,12 @@
 import 'package:devquiz/core/app_colors.dart';
 import 'package:devquiz/core/app_text_styles.dart';
+import 'package:devquiz/shared/models/user_model.dart';
 import 'package:flutter/material.dart';
 
 class ChartWidget extends StatelessWidget {
+  final UserModel user;
+  ChartWidget({required this.user});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +29,7 @@ class ChartWidget extends StatelessWidget {
           ),
           Center(
             child: Text(
-              '75%',
+              user.score.toString(),
               style: AppTextStyles.heading,
             ),
           ),
