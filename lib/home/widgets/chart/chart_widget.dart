@@ -29,7 +29,7 @@ class ChartWidget extends StatelessWidget {
           ),
           Center(
             child: Text(
-              user.score.toString(),
+              '${user.score.toString()}' + '%',
               style: AppTextStyles.heading,
             ),
           ),
