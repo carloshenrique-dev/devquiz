@@ -30,6 +30,19 @@ class NextButtonWidget extends StatelessWidget {
         this.borderColor = AppColors.lightGrey,
         this.onTap = onTap,
         this.label = label;
+  NextButtonWidget.compartilhar(
+      {required String label, required VoidCallback onTap})
+      : this.color = AppColors.chartPrimary,
+        this.fontColor = AppColors.white,
+        this.borderColor = AppColors.border,
+        this.onTap = onTap,
+        this.label = label;
+  NextButtonWidget.voltar({required String label, required VoidCallback onTap})
+      : this.color = AppColors.purple,
+        this.fontColor = AppColors.white,
+        this.borderColor = AppColors.purple,
+        this.onTap = onTap,
+        this.label = label;
 
   @override
   Widget build(BuildContext context) {
